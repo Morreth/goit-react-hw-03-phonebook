@@ -1,0 +1,15 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(185, 200, 27);
+}
+.input{
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
