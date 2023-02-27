@@ -6,8 +6,7 @@ import PropTypes from 'prop-types';
 export const ContactList = ({ removeContact, filteredContacts }) => {
   return (
     <ul>
-      {filteredContacts.length > 0 &&
-        filteredContacts.map(({ id, name, number }) => {
+      { filteredContacts.map(({ id, name, number }) => {
           return (
             <li className={css.item} key={id}>
               <ContactListItem
@@ -24,8 +23,8 @@ export const ContactList = ({ removeContact, filteredContacts }) => {
 };
 
 ContactList.propTypes = {
-filteredContacts: PropTypes.arrayOf.isRequired,
-id: PropTypes.string.isRequired,
+filteredContacts: PropTypes.func,
+id: PropTypes.string,
 name: PropTypes.string.isRequired,
 number: PropTypes.string.isRequired,
 }
