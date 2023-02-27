@@ -23,8 +23,8 @@ export const ContactList = ({ removeContact, filteredContacts }) => {
 };
 
 ContactList.propTypes = {
-filteredContacts: PropTypes.func,
+filteredContacts: PropTypes.array,
 id: PropTypes.string,
-name: PropTypes.string.isRequired,
-number: PropTypes.string.isRequired,
+name: PropTypes.string,
+number: PropTypes.string,
 }
